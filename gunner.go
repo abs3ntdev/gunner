@@ -1,4 +1,4 @@
-package gun
+package gunner
 
 import (
 	"os"
@@ -13,6 +13,7 @@ import (
 func LoadApp(i any, appName string) {
 	yamlDecoder := yaml.New()
 	dotenvDecoder := aconfigdotenv.New()
+
 	configDir, err := os.UserConfigDir()
 	if err != nil {
 		homeDir, err := os.UserHomeDir()

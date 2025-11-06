@@ -1,3 +1,4 @@
+// Package yaml provides a YAML file decoder for aconfig.
 package yaml
 
 import (
